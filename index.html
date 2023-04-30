@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+        <title> Globo </title>
+        <link rel = "shortcut icon" href = "/images/icono.png" />
+
+        <link rel = "stylesheet" href = "/style/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="mSuperior">
+                <img src = "images/globo.png"
+                    width ="150">
+                <button class = "botonIniciarSesion der" id="botonIniciarSesion" onclick="mostrarFormulario()">Iniciar sesión</button>     
+            </div>
+            <div id = "form" class="formulario"> 
+                    <form class = "formularioInicioSesion" id="formularioInicioSesion2">
+                        <label class = "tap" for="usuario">Usuario:</label>
+                        <input type="text" id="usuario" name="usuario"><br><br>
+                        <label class = "tap" for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena"><br><br> 
+                        <input style = "transform: translate(6%)" type="button" value="Iniciar sesión" onclick="cerrarFormulario()">
+                    </form>
+            </div> 
+            <div class="mPerfil"> 
+                <img class = "perfil" src="/images/fotoPerfil.jpeg"
+                    alt = "Foto de perfil">
+                <div class = "perfilTex">
+                    <h1> Jane Doe</h1>
+                    <p><strong>Email: </strong>jane_doe@email.com</p>
+                    <p><strong>Fecha de nacimiento: </strong>01/05/1996</p>
+                    <p><strong>Telefono: </strong>987-578-5748</p>
+                    <p><strong>Ciudad: </strong>Tokio, Japón</p>
+                    <p class = "opacidad">Trabajando en <strong>Lawn N</strong></p>
+                </div>
+                <button class = "mSeguir" id="seguir">Seguir</button>
+            </div>
+            <div class="mSobreMi"> 
+                <div class = "mSobreMiTex">
+                    <h2>Sobre mí</h2>
+                    <p>¡Hola a todos! Soy Jane, y actualmente<br>
+                        vivo en la vibrante y emocionante<br>
+                        ciudad de Tokio, Japon. Me encanta<br>
+                        capturar ña esencia de la vida urbana a<br>
+                        través de mi lente, explotando el<br>
+                        contraste entre la arquitectura<br>
+                        moderna y las tradiciones centenarias<br>
+                        que conviven en esta metrópolis<br>
+                        única. Desde rascacielos<br>
+                        deslumbrantes y calles bulliciosas<br>
+                        hasta templos serenos y jardines<br>
+                        tranquilos, encuentro inspiración en<br>
+                        cada rincón de esta increible ciudad.</p>
+                </div>
+            </div>
+            <div class="mBiografia">
+                <div class = "mBiografiaTex">
+                    <p class = "opacidad">Publicado hace 1 semana</p>
+                    <img src="/images/fotoSubida.jpeg"
+                        width="530">
+                </div>
+                <button class = "mMeGusta" id="MeGusta">Me gusta</button>
+                <div class = "mCont" id="contMG"></div>
+
+                    <p class = "tap"><strong>Juan Perez </strong>WoW, esa foto es impresionante!</p>
+                    <p class = "tap"><strong>Kathi Rennie </strong>Esa foto es espetacular, me trae muchos recuerdos</p>
+
+                    <div class = "tap">
+                        <div id="comment-section"></div>
+                            <form>
+                                <textarea id="comment" name="comment" rows="5"></textarea><br><br>
+                        
+                            </form>      
+                            <button class = "enviar-btn" onclick="comentar()">Comentar</button>
+                    </div>
+                
+            </div>
+            <div class="div5">
+                <div id="messageBox" class="messageBox">
+                    <p>Primero debes iniciar sesion!</p>
+                  </div>
+            </div>
+        </div> 
+         
+
+        <script src="/script/script.js"></script>
+    </body>
+</html>

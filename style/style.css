@@ -1,0 +1,217 @@
+body{
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 0.25fr repeat(3, 1fr);
+    grid-template-rows: 1fr 0.50fr repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .mSuperior { grid-area: 1 / 1 / 2 / 9; 
+                background-color: lightseagreen;
+                max-width: 2000px;
+                max-height: 50px;
+                }
+                .der{
+                    float: right;
+                    position: absolute;
+                    top: 5.5%;
+                    right: 0;
+                    transform: translate(-15%, -75%);
+                }
+    .mPerfil { grid-area: 3 / 2 / 7 / 5; 
+            background-color: #f2f2f2;
+            min-width: 980px;
+            max-height: 260px;
+            border-radius: 20px;
+            transform: translate(-39%, -330%);
+            }
+
+    .mSobreMi { grid-area: 3 / 6 / 7 / 8; 
+            background-color: #f2f2f2;
+            min-width: 375px;
+            max-height: 330px;
+            border-radius: 20px;
+            transform: translate(-50%, -177%);}
+            .mSobreMiTex{
+                margin-left: 20px;
+                transform: translate(5%);
+            }
+    .mBiografia { grid-area: 1 / 1 / 2 / 2; 
+            background-color: #f2f2f2;
+            transform: translate(33.5%, 55%);
+            min-width: 575px;
+            min-height: 500px;
+            border-radius: 20px;}
+            .mBiografiaTex{
+                margin-left: 20px;
+                transform: translate(0%);
+            }
+            .mMeGusta{
+                margin-left: 20px;
+                transform: translate(0%, -5%);
+                padding: 5px;
+                background-color: #4caf4f6c;
+                color: rgb(0, 0, 0);
+                border:#1ca821;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .mNoMeGusta{
+                margin-left: 18px;
+                transform: translate(0%, 0%);
+                padding: 5px;
+                background-color: #ca3b3b6c;
+                color: rgb(0, 0, 0);
+                border:#1ca821;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .mCont{
+                transform: translate(645%, -90%);
+                position: absolute;
+                color: rgb(0, 0, 0);
+                border:#000000;
+                border-radius: 5px;
+            }
+                .comment-name{
+                    transform: translate(0%, -40%);
+                    font-weight: bold;
+                }
+                .comment-text{
+                    transform: translate(14%, -145%);
+                }
+                .delete-btn{
+                    transform: translate(85%, -215%);
+                    border-radius: 20px;
+                    color: red;
+                    cursor: pointer;
+                }
+                .enviar-btn{
+                    transform: translate(580%, -145%);
+                    border-radius: 20px;
+                    width: 80px;
+                    height: 40px;
+                    background-color: aqua;
+                    color: rgb(105, 105, 105);
+                    cursor: pointer;
+                }
+    .div5 { grid-area: 1 / 7 / 2 / 9; } 
+    .formulario { grid-area: 2 / 7 / 5 / 9; 
+                display: none;
+                z-index: 1;
+                border-radius: 20px;} 
+                .mSeguir{
+                    margin-left: 20px;
+                    transform: translate(1530%, -125%);
+                    padding: 10px;
+                    background-color: #4caf4f6c;
+                    color: rgb(0, 0, 0);
+                    border:#1ca821;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                .mDejarSeguir{
+                    margin-left: 20px;
+                    transform: translate(758%, -125%);
+                    padding: 10px;
+                    background-color: #4caf4f6c;
+                    color: rgb(0, 0, 0);
+                    border:#1ca821;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+.formularioInicioSesion {
+    float: right;
+    position: absolute;
+    top: 26%;
+    right: 0;
+    transform: translate(-3.5%, -50%);
+    border: 2px solid #ccc;
+    background-color: #f2f2f2;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+input{
+    transform: translate(2%);
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.botonIniciarSesion {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.usuario{
+    padding: 10px;
+    top: 2.5%;
+    transform: translate(1200%, -47%);
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.perfil {
+    width: 220px;
+    height: 220px;
+    transform: translate(15%, 7%);
+    border-radius: 50%;
+    border: 3px solid blue;
+    float: left;
+    margin-right: 20px;
+  }
+.perfilTex {
+    margin-left: 20px;
+    transform: translate(5%);
+}
+.opacidad{
+    opacity: 0.5;
+}
+
+textarea {
+    background-color:#b9b9b9; /* hace el textarea transparente */
+    color: #000000; /* cambia el color del texto */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border:none;
+    height: 12px;
+    width: 75%;
+    padding: 10px;
+    border-radius: 5px;
+    resize: both;
+    cursor: pointer;
+}
+
+.tap{
+    transform: translate(3%);
+}
+
+#messageBox {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
